@@ -12,7 +12,7 @@ A collection of extra [Faker](https://github.com/fzaninotto/Faker) providers.
 You can install the package via composer:
 
 ```bash
-composer require chinleung/laravel-faker-providers
+composer require-dev chinleung/laravel-faker-providers
 ```
 
 ## Providers
