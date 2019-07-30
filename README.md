@@ -26,8 +26,8 @@ This is a provider for JSON columns of [Spatie's Laravel Translatable](https://g
   
 ### Methods
     
-*  [translatable](#translatable)
-*  [translatableName](#translatableName)
+*  [translatable](#translatableclosure-callable-array-locales--null--array)
+*  [translatableName](#translatablenamearray-locales--null--array)
   
 ### translatable(\Closure $callable, array $locales = null) : array
 _Pass a closure to be executed for every locale._
