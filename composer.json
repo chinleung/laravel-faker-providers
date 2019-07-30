@@ -17,10 +17,10 @@
     ],
     "require": {
         "php": "^7.1",
-        "fzaninotto/faker": "^1.8",
         "illuminate/support": "5.8.*"
     },
     "require-dev": {
+        "fzaninotto/faker": "^1.8",
         "orchestra/testbench": "3.8.*",
         "phpunit/phpunit": "^7.0"
     },
