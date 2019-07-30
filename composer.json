@@ -1,6 +1,6 @@
 {
     "name": "chinleung/laravel-faker-providers",
-    "description": "Extra Faker providers.",
+    "description": "Custom collection of Laravel Faker providers.",
     "keywords": [
         "chinleung",
         "laravel-faker-providers"
