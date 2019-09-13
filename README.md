@@ -76,7 +76,7 @@ factory(User::class, function (Faker $faker) {
     $faker->addProvider(new \ChinLeung\LaravelFakerProviders\TranslatableAttributeProvider($faker));
   
     return [
-      'name' => $faker->translatableName, // ['en' => 'John Doe', 'fr' => 'Jane Doe']
+        'name' => $faker->translatableName, // ['en' => 'John Doe', 'fr' => 'Jane Doe']
     ];
 });
 ```
