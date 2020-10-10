@@ -22,7 +22,7 @@ class TranslatableAttributeProviderTest extends TestCase
      *
      * @return void
      */
-    protected function setUp() : void
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -37,7 +37,7 @@ class TranslatableAttributeProviderTest extends TestCase
      * @test
      * @return void
      */
-    public function a_closure_can_be_passed_as_translatable() : void
+    public function a_closure_can_be_passed_as_translatable(): void
     {
         $closure = function ($locale) {
             return strtolower($this->faker->firstName);
@@ -59,7 +59,7 @@ class TranslatableAttributeProviderTest extends TestCase
      * @test
      * @return void
      */
-    public function a_name_can_be_generated_for_each_locale() : void
+    public function a_name_can_be_generated_for_each_locale(): void
     {
         $this->assertCount(1, $this->faker->translatableName);
         $this->assertCount(2, $names = $this->faker->translatableName($this->twoLocales));
@@ -71,7 +71,7 @@ class TranslatableAttributeProviderTest extends TestCase
      *
      * @return self
      */
-    protected function assertValuesAreLowercased(array $values) : self
+    protected function assertValuesAreLowercased(array $values): self
     {
         foreach ($values as $value) {
             $this->assertEquals(strtolower($value), $value);

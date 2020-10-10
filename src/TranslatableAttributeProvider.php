@@ -14,7 +14,7 @@ class TranslatableAttributeProvider extends Base
      * @param  array  $locales
      * @return array
      */
-    public function translatable(Closure $callable, array $locales = null) : array
+    public function translatable(Closure $callable, array $locales = null): array
     {
         if (! $locales) {
             $locales = function_exists('locales')
@@ -38,7 +38,7 @@ class TranslatableAttributeProvider extends Base
      * @param  array  $locales
      * @return array
      */
-    public function translatableName(array $locales = null) : array
+    public function translatableName(array $locales = null): array
     {
         return $this->translatable(function () {
             return $this->generator->name;
