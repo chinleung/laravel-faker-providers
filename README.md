@@ -18,6 +18,15 @@ composer require chinleung/laravel-faker-providers --dev
 ## Providers
 
 <details>
+<summary>BooleanOptionalModifierProvider</summary>  
+  
+### Note
+  
+This is a provider that adds support for true and false values Faker's default optional modifier.
+  
+</details>
+
+<details>
 <summary>TranslatableAttributeProvider</summary>  
   
 ### Note
