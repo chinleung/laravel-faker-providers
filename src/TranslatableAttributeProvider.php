@@ -3,7 +3,6 @@
 namespace ChinLeung\LaravelFakerProviders;
 
 use Closure;
-use Faker\Provider\Base;
 
 class TranslatableAttributeProvider extends Base
 {
@@ -24,7 +23,7 @@ class TranslatableAttributeProvider extends Base
 
         return call_user_func_array(
             'array_merge',
-            array_map(function ($locale) use ($callable) {
+            array_map(static function ($locale) use ($callable) {
                 return [
                     $locale => call_user_func($callable, $locale),
                 ];
