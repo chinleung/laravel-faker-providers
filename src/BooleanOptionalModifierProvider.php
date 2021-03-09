@@ -3,6 +3,7 @@
 namespace ChinLeung\LaravelFakerProviders;
 
 use Faker\DefaultGenerator;
+use Faker\Provider\Base;
 
 class BooleanOptionalModifierProvider extends Base
 {
