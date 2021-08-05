@@ -24,7 +24,7 @@ class TranslatableAttributeProvider extends Base
 
         return call_user_func_array(
             'array_merge',
-            array_map(function ($locale) use ($callable) {
+            array_map(static function ($locale) use ($callable) {
                 return [
                     $locale => call_user_func($callable, $locale),
                 ];
@@ -41,7 +41,7 @@ class TranslatableAttributeProvider extends Base
     public function translatableName(array $locales = null): array
     {
         return $this->translatable(function () {
-            return $this->generator->name;
+            return $this->generator->name();
         }, $locales);
     }
 }
