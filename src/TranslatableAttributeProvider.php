@@ -3,7 +3,6 @@
 namespace ChinLeung\LaravelFakerProviders;
 
 use Closure;
-use Faker\Provider\Base;
 
 class TranslatableAttributeProvider extends Base
 {
