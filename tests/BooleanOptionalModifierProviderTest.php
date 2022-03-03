@@ -28,6 +28,7 @@ class BooleanOptionalModifierProviderTest extends TestCase
      * Passing a true value will return the generator.
      *
      * @test
+     *
      * @return void
      */
     public function passing_a_true_value_will_return_the_generator(): void
@@ -39,6 +40,7 @@ class BooleanOptionalModifierProviderTest extends TestCase
      * Passing a false value will return the generator.
      *
      * @test
+     *
      * @return void
      */
     public function passing_a_false_value_will_return_the_generator(): void

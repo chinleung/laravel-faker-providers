@@ -35,6 +35,7 @@ class TranslatableAttributeProviderTest extends TestCase
      * Make sure we can pass a closure for the translatable method.
      *
      * @test
+     *
      * @return void
      */
     public function a_closure_can_be_passed_as_translatable(): void
@@ -57,6 +58,7 @@ class TranslatableAttributeProviderTest extends TestCase
      * A name can be generated for each locale.
      *
      * @test
+     *
      * @return void
      */
     public function a_name_can_be_generated_for_each_locale(): void
